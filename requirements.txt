@@ -1,0 +1,6 @@
+streamlit>=1.40.0
+scikit-learn==1.9.1
+pandas==3.0.5
+joblib==1.6.0
+openpyxl==3.1.5
+

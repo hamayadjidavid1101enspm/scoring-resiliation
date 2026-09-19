@@ -1,0 +1,9 @@
+# .streamlit/config.toml — Thème personnalisé (Étape 22)
+# Les couleurs seront identiques en local et en ligne
+
+[theme]
+primaryColor = "#1F3864"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#EAF3F8"
+textColor = "#1B1B1B"
+
