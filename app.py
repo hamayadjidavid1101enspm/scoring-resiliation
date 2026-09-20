@@ -64,8 +64,10 @@ for col in cat_cols:
 # - Le pipeline fait la prédiction (prétraitement + modèle)
 # - On affiche la probabilité avec une jauge et un message coloré selon le seuil
 
-SEUIL_RISQUE = 0.55
-SEUIL_MODERE = 0.40
+st.sidebar.markdown('---')
+st.sidebar.header('⚙️ Paramètres d\'analyse')
+SEUIL_RISQUE = st.sidebar.number_input('Seuil de risque élevé (%)', min_value=0, max_value=100, value=55) / 100.0
+SEUIL_MODERE = st.sidebar.number_input('Seuil de risque modéré (%)', min_value=0, max_value=100, value=40) / 100.0
 
 if st.button('🔮 Prédire', type='primary', use_container_width=True):
     df_client = pd.DataFrame([client])[num_cols + cat_cols]
